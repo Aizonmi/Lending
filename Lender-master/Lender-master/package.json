@@ -1,0 +1,28 @@
+{
+  "name": "lendify",
+  "version": "1.0.0",
+  "description": "Integrated Lending Platform - All Systems",
+  "scripts": {
+    "start": "node scripts/start-all.js",
+    "start:dev": "node scripts/start-all.js dev",
+    "install:all": "node scripts/install-all.js",
+    "update:password": "node scripts/update-mongodb-password.js",
+    "fix:password": "node scripts/fix-password-encoding.js",
+    "test:mongodb": "cd \"Member A/backend\" && node test-connection.js",
+    "backend:a": "cd \"Member A/backend\" && npm start",
+    "backend:b": "cd \"Member B/backend\" && npm start",
+    "backend:c": "cd \"Member C/backend\" && npm start",
+    "frontend": "cd frontend && npm start",
+    "dev:a": "cd \"Member A/backend\" && npm run dev",
+    "dev:b": "cd \"Member B/backend\" && npm run dev",
+    "dev:c": "cd \"Member C/backend\" && npm run dev"
+  },
+  "keywords": ["lending", "platform", "catalog", "dashboard"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3"
+  }
+}
+
